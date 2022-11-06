@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<header>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alimentação Kelp's</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</header>
+
+<body>
+
+  <div class="main">
+    <section>
+      <h1>Produtos</h1>
+      <input type="search" name="search" id="search-foods">
+      <table id="table-foods">
+        <thead>
+          <th>Item</th>
+          <th>QTD/Dia</th>
+          <th>QTD Total</th>
+          <th>Medida</th>
+          <th>Refeição</th>
+          <th>Ações</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+    <form id="product-form">
+      <h1>Cadastrar</h1>
+      <label for="input-name">Item</label>
+      <input type="text" name="name" id="input-name">
+
+      <label for="input-meal">Refeições</label>
+      <input type="text" name="meal" id="input-meal" list="datalist-meals">
+      <span id="selected-meals"></span>
+      <datalist id="datalist-meals">
+      </datalist>
+
+      <label for="input-qtd_per_day">QTD Dia</label>
+      <input type="number" name="qtd_per_day" id="input-qtd_per_day" value="1">
+      <label for="input-qtd_total">QTD Total</label>
+      <input type="number" name="qtd_total" id="input-qtd_total" value="0">
+
+      <label for="select-measure">Medida</label>
+      <select name="measure" id="select-measure">
+      </select>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+</body>
+
+<script src="js/constantes.js"></script>
+<script src="js/models/product.js"></script>
+<script src="js/db/TableModel.js"></script>
+<script async src="js/db/productsTable.js"></script>
+<script async src="js/db/kelpsFoodDb.js"></script>
+<script async src="js/db/dbModule.js"></script>
+<script async src="js/index.js"></script>
+<script async src="js/components/table.js"></script>
+<script async src="js/components/form.js"></script>
+
+</html>

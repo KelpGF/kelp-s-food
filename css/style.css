@@ -1,0 +1,11 @@
+.main {
+  display: flex;
+  justify-content: space-around;
+  margin-inline: 30vh;
+}
+
+#product-form {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
