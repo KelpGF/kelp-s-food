@@ -13,9 +13,9 @@
 <body>
 
   <div class="main">
-    <section>
-      <h1>Produtos</h1>
-      <input type="search" name="search" id="search-foods">
+    <section class="section-table">
+      <h2>Produtos</h2>
+      <input type="search" name="search" id="search-foods" placeholder="Pesquisar item...">
       <table id="table-foods">
         <thead>
           <th>Item</th>
@@ -28,25 +28,37 @@
         <tbody></tbody>
       </table>
     </section>
-    <form id="product-form">
-      <h1>Cadastrar</h1>
-      <label for="input-name">Item</label>
-      <input type="text" name="name" id="input-name">
+    <form class="form" id="product-form">
+      <h2>Cadastrar</h2>
 
-      <label for="input-meal">Refeições</label>
-      <input type="text" name="meal" id="input-meal" list="datalist-meals">
+      <div class="wrapper-input">
+        <label for="input-name">Item</label>
+        <input type="text" name="name" id="input-name">
+      </div>
+
+      <div class="wrapper-input">
+        <label for="input-meal">Refeições</label>
+        <input type="text" name="meal" id="input-meal" list="datalist-meals">
+      </div>
       <span id="selected-meals"></span>
       <datalist id="datalist-meals">
       </datalist>
 
-      <label for="input-qtd_per_day">QTD Dia</label>
-      <input type="number" name="qtd_per_day" id="input-qtd_per_day" value="1">
-      <label for="input-qtd_total">QTD Total</label>
-      <input type="number" name="qtd_total" id="input-qtd_total" value="0">
 
-      <label for="select-measure">Medida</label>
-      <select name="measure" id="select-measure">
-      </select>
+      <div class="wrapper-input">
+        <label for="input-qtd_per_day">QTD Dia</label>
+        <input type="number" name="qtd_per_day" id="input-qtd_per_day" value="1">
+      </div>
+      <div class="wrapper-input">
+        <label for="input-qtd_total">QTD Total</label>
+        <input type="number" name="qtd_total" id="input-qtd_total" value="0">
+      </div>
+
+      <div class="wrapper-input">
+        <label for="select-measure">Medida</label>
+        <select name="measure" id="select-measure">
+        </select>
+      </div>
 
       <button type="submit">Cadastrar</button>
     </form>
@@ -56,11 +68,11 @@
 <script src="js/constantes.js"></script>
 <script src="js/models/product.js"></script>
 <script src="js/db/TableModel.js"></script>
-<script async src="js/db/productsTable.js"></script>
-<script async src="js/db/kelpsFoodDb.js"></script>
-<script async src="js/db/dbModule.js"></script>
-<script async src="js/index.js"></script>
-<script async src="js/components/table.js"></script>
-<script async src="js/components/form.js"></script>
+<script src="js/db/productsTable.js"></script>
+<script src="js/db/kelpsFoodDb.js"></script>
+<script src="js/db/dbModule.js"></script>
+<script src="js/index.js"></script>
+<script src="js/components/table.js"></script>
+<script src="js/components/form.js"></script>
 
 </html>

@@ -13,7 +13,7 @@ async function populateTableFoods() {
           ${product.meal.map((meal) => mealsEnum[meal] || meal).join(' | ')}
         </td>
         <td>
-          <button type="button" onClick="deleteProduct(${product.id})">
+          <button type="button" onClick="deleteProduct(${product.id})" class="btn-red">
             Excluir
           </button>
         </td>

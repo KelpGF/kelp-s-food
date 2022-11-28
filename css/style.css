@@ -1,11 +1,104 @@
-.main {
-  display: flex;
-  justify-content: space-around;
-  margin-inline: 30vh;
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+body {
+	margin: 0;
+	background-color: rgb(31, 31, 31);
+	color: snow;
+	font-family: 'Nerko One';
+}
+h2{
+  font-size: 2em;
+}
+input {
+	border: 1px solid rgb(153, 153, 153);
+	border-radius: 5px;
+	padding-block: 0.3em;
+	padding-inline: 0.4em;
+	font-size: medium;
+}
+select {
+	border: 1px solid rgb(153, 153, 153);
+	border-radius: 5px;
+	padding-block: 0.3em;
+	padding-inline: 0.4em;
+	font-size: medium;
+	font-family: 'Nerko One';
+}
+label {
+  font-size: large;
 }
 
-#product-form {
+.main {
+	width: 100%;
+	display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+}
+
+.section-table {
   display: flex;
   flex-direction: column;
-  width: 35%;
+  padding-inline: 1.5em;
+}
+
+.section-table input {
+  width: 50%;
+}
+
+.wrapper-input {
+  padding: 0%;
+  margin-block: 0.3em;
+}
+
+.wrapper-input input {
+  margin-left: 10px;
+}
+.wrapper-input select {
+  margin-left: 10px;
+}
+
+table, th, td {
+  border: 1px solid snow;
+  font-size: 1.1em;
+  text-align: left;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-block: 10px;
+}
+th, td {
+  padding-inline: 10px;
+}
+td {
+  padding-block: 5px;
+}
+
+button {
+  border-radius: 10px;
+  font-size: large;
+	font-family: 'Nerko One';
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+.form button {
+  color: snow;
+  border: 1px solid snow;
+  background-color: rgba(53, 167, 0, 0.781);
+  align-self: flex-start;
+  margin-block: 10px;
+  margin-left: 20%;
+  width: 125px;
+}
+
+.btn-red {
+  color: snow;
+  border: 1px solid snow;
+  background-color: crimson;
 }

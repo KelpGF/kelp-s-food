@@ -55,7 +55,6 @@ function showMealsForm() {
 
 async function addProduct(event) {
 	event.preventDefault();
-	console.log('submit');
 
 	if (
 		formProduct.name.length < 3 ||
